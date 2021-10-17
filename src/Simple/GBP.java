@@ -1,6 +1,6 @@
 package Simple;
 
-public class GBP extends Currency{
+public class GBP extends Currency implements Changeable {
     @Override
     public void toEgp() {
         System.out.println("The equivalent EGP is: "+getAmount()*21.37);

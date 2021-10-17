@@ -7,7 +7,9 @@ public class Main {
 
     public static void main(String[] args) {
     Scanner get =new Scanner(System.in);
-	Currency c = null;
+
+    //Make instance of EGP  as default
+	Currency c = new EGP();
 
 	byte chosenNumber;
         System.out.println("----Welcome to Currency Changer-----\n");
@@ -31,6 +33,7 @@ public class Main {
         }
         System.out.println("Enter the currency amount:");
         double amount=get.nextDouble();
+
         c.setAmount(amount);
         System.out.println("Choose currency to change:");
         System.out.println("1-EGP\n2-USD\n3-EURO\n4-GBP");

@@ -1,6 +1,6 @@
 package Simple;
 
-public class EURO extends Currency{
+public class EURO extends Currency implements Changeable {
 
 
     @Override

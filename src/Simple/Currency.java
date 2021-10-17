@@ -1,6 +1,6 @@
 package Simple;
 
-public abstract class Currency {
+public abstract class Currency implements Changeable {
 
     double amount;
 
@@ -15,10 +15,7 @@ public abstract class Currency {
     public double getAmount() {
         return amount;
     }
-    public abstract void toEgp();
-    public abstract void toUsd();
-    public abstract void toEuro();
-    public abstract void toGbp();
+
 
 }
 
